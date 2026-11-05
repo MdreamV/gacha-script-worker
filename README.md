@@ -4,10 +4,10 @@ GachaScriptWorker 是一个 Windows 桌面自动化总控，用来按顺序执�
 
 目前支持：
 
-- 米游社签到（控制台脚本）
-- 三月七 / 崩坏：星穹铁道
-- 绝区零一条龙
-- 明日方舟 MAA（模拟器由 MAA 自己管理）
+- [米游社签到](https://github.com/Womsxd/MihoyoBBSTools)（控制台脚本）
+- [三月七 / 崩坏：星穹铁道](https://github.com/moesnow/March7thAssistant)
+- [绝区零一条龙](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
+- [明日方舟 MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights)（模拟器由 MAA 自己管理）
 
 > 本 README 面向日常使用。架构、日志判定、坐标校准和二次开发说明见 [AGENTS.md](AGENTS.md)。
 
