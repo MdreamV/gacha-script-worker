@@ -9,6 +9,14 @@ GachaScriptWorker 是一个 Windows 桌面自动化总控，用来按顺序执�
 - [绝区零一条龙](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
 - [明日方舟 MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights)（模拟器由 MAA 自己管理）
 
+## 下载
+
+在 [Releases](https://github.com/MdreamV/gacha-script-worker/releases) 下载：
+
+- `...-portable.zip`：内置 Python 运行环境，解压后双击 `GachaScriptWorker.exe` 即可使用。
+- `...-source.zip`：不含 Python 环境，需要自行安装 Python 和 `requirements.txt` 中的依赖。
+
+两个包都不包含米游社签到、三月七、绝区零一条龙或 MAA 本体，需要先在电脑上安装这些工具，再在界面里填写对应路径。
 
 ## 功能
 

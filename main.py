@@ -56,10 +56,13 @@ def show_already_running() -> None:
 
 
 def relaunch_as_admin() -> bool:
-    script = str(Path(__file__).resolve())
+    if getattr(sys, "frozen", False):
+        params = ""
+    else:
+        params = f'"{Path(__file__).resolve()}"'
     try:
         result = ctypes.windll.shell32.ShellExecuteW(
-            None, "runas", sys.executable, f'"{script}"', str(appconfig.APP_DIR), 1
+            None, "runas", sys.executable, params, str(appconfig.APP_DIR), 1
         )
         return int(result) > 32
     except Exception:

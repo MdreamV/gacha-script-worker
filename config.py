@@ -2,10 +2,15 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import tempfile
 from pathlib import Path
 
-APP_DIR = Path(__file__).resolve().parent
+# 打包成 exe 后，配置和日志放在 exe 所在目录；源码运行时放在项目目录
+if getattr(sys, "frozen", False):
+    APP_DIR = Path(sys.executable).resolve().parent
+else:
+    APP_DIR = Path(__file__).resolve().parent
 CONFIG_PATH = APP_DIR / "config.json"
 STATE_PATH = APP_DIR / "state.json"
 LOG_DIR = APP_DIR / "logs"
