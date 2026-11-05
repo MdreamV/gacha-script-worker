@@ -9,7 +9,6 @@ GachaScriptWorker 是一个 Windows 桌面自动化总控，用来按顺序执�
 - [绝区零一条龙](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
 - [明日方舟 MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights)（模拟器由 MAA 自己管理）
 
-> 本 README 面向日常使用。架构、日志判定、坐标校准和二次开发说明见 [AGENTS.md](AGENTS.md)。
 
 ## 功能
 
@@ -156,13 +155,6 @@ pip install -r requirements.txt
 | 修改代码后没有生效 | 旧进程可能仍在托盘运行，先从托盘退出再重新启动 |
 | 提示程序已经在运行 | 查看右下角托盘，双击图标打开已有窗口 |
 
-## 安全与注意事项
-
-- **绝对不要读取、输出、复制、截图或提交**绝区零一条龙配置目录下的 `config\01\game_account.yml`。以 `config.json` 中 `zzz` 路径为基准，该文件位于一条龙启动器所在目录的 `config\01\game_account.yml`，保存了游戏账号的手机号和密码。排查问题不需要打开它。
-- 失败截图和运行日志可能包含游戏 UID、账号信息或窗口内容，不要上传到公开仓库或外部服务。
-- 自动化运行期间会真实移动鼠标、点击窗口并结束相关进程，请勿在运行期间使用电脑。
-- 总控会关闭三月七、一条龙、MAA、星穹铁道和绝区零进程；**模拟器不在清理范围内**。
-- 请自行确认使用自动化工具符合对应游戏和脚本的使用条款。
 
 ## 开发者文档
 
