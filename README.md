@@ -36,38 +36,7 @@ pip install -r requirements.txt
 
 ## 快速开始
 
-### 1. 准备目录
-
-默认配置假设目标程序与本项目位于同一个父目录下：
-
-```text
-<工作目录>\
-├─ MihoyoBBSTools\
-│  └─ MihoyoBBSTools_fork\          米游社签到
-├─ m37\
-│  └─ March7thAssistant_full\
-│     └─ March7thAssistant_full\
-│        └─ March7th Launcher.exe   三月七
-├─ zzzOD\
-│  └─ <版本目录>\
-│     └─ OneDragon-Launcher.exe     绝区零一条龙
-├─ MAA\
-│  └─ MAA.exe                       明日方舟 MAA
-└─ <项目目录>\                      本仓库
-```
-
-默认路径如下，均相对本项目的根目录：
-
-| 脚本 | 路径类型 | 默认相对路径 |
-| --- | --- | --- |
-| 米游社签到 | 目录 | `..\MihoyoBBSTools\MihoyoBBSTools_fork` |
-| 三月七 | exe | `..\m37\March7thAssistant_full\March7thAssistant_full\March7th Launcher.exe` |
-| 绝区零一条龙 | exe | `..\zzzOD\OD-2.4.7\OneDragon-Launcher.exe` |
-| 明日方舟 MAA | exe | `..\MAA\MAA.exe` |
-
-如果实际目录不同，不需要移动文件，直接在界面里修改路径即可。配置既支持相对路径，也支持绝对路径；相对路径始终按本项目根目录解析，与从哪里启动无关。
-
-### 2. 启动
+### 1. 启动
 
 - 日常使用：双击 `启动总控.bat`（无控制台窗口）。
 - 调试使用：双击 `调试启动.bat`（保留控制台，能看到异常信息）。
@@ -76,7 +45,7 @@ pip install -r requirements.txt
 
 首次启动会自动生成 `config.json`。
 
-### 3. 配置并试跑
+### 2. 配置并试跑
 
 1. 在“脚本设置”中确认每个脚本的路径。
 2. 勾选需要启用的脚本，用 ▲/▼ 调整执行顺序。
